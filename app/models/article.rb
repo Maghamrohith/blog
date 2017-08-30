@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
 	belongs_to :category 
-    has_many :auothors
+    belongs_to :auothor
+    has_many :reviews
 end
